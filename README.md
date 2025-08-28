@@ -18,7 +18,6 @@ It demonstrates variables, arrays, objects, functions, conditionals, loops, DOM 
 ## How to Run
 1. Download/clone the repo.
 2. Open `index.html` in any modern browser.
-3. Open DevTools Console to see logs for Parts B & C outputs.
 
 ## Git Workflow (what I did)
 ```bash
