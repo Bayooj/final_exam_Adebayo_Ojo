@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Final Exam</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>JavaScript Final Exam</h1>
+    <p id="subtitle">A small app demonstrating JS basics, DOM, and events.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="movies-heading">
+      <h2 id="movies-heading">Favorite Movies</h2>
+      <p>Rendered dynamically from a JavaScript array:</p>
+      <ul id="movies-list" class="card"></ul>
+    </section>
+
+    <section aria-labelledby="student-heading">
+      <h2 id="student-heading">Student Profile (Object)</h2>
+      <div id="student-card" class="card"></div>
+    </section>
+
+    <section aria-labelledby="square-heading">
+      <h2 id="square-heading">Square Calculator (Function)</h2>
+      <form id="square-form" class="inline-form" novalidate>
+        <label for="square-input">Enter a number:</label>
+        <input id="square-input" name="square" type="number" required />
+        <button type="submit">Calculate Square</button>
+      </form>
+      <div id="square-results" class="card" aria-live="polite"></div>
+    </section>
+
+    <section aria-labelledby="loops-heading">
+      <h2 id="loops-heading">Loops Output</h2>
+      <div class="stack">
+        <div class="card">
+          <h3>For loop (1–10)</h3>
+          <pre id="for-output" class="codeblock"></pre>
+        </div>
+        <div class="card">
+          <h3>While loop sum (1–5)</h3>
+          <p id="while-sum"></p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="events-heading">
+      <h2 id="events-heading">DOM Interaction & Events</h2>
+      <button id="bg-btn" class="accent">Change Background</button>
+    </section>
+
+    <section aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Form (Validation)</h2>
+      <form id="contact-form" novalidate class="stack">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" />
+          <p class="error" id="name-error" aria-live="polite"></p>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" />
+          <p class="error" id="email-error" aria-live="polite"></p>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+          <p class="error" id="message-error" aria-live="polite"></p>
+        </div>
+        <button type="submit">Submit</button>
+        <p id="form-status" class="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; <span id="year"></span> Adebayo Ojo — JS Final Exam</small>
+  </footer>
+</body>
+</html>
